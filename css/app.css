@@ -4,9 +4,8 @@ html, body {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
-  font-size: 1.75rem;
   background: #fff;
-  color: #333;
+  color: #666;
   padding-top:50px;
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -95,17 +94,22 @@ a:hover {
 }
 
 body > section {
-  padding: 40px 0;
+  padding: 20px 0;
+}
+
+body > section.compact {
+  padding: 0;
 }
 
 body > section h2 {
-  font-weight: 900;
-  margin: 0 0 1em;
+    color: #000000;
+    font-weight: 900;
+    margin: 0 0 0.5em;
 }
 
 body > section h3 {
   font-weight: 600;
-  margin: 1em 0;
+  margin: 0.75em 0;
   text-transform: uppercase;
 }
 
@@ -147,6 +151,10 @@ body > section h3 {
   color: #fff;
 }
 
+#about h2 {
+  color: #fff;
+}
+
 .topic {
   padding: 20px 0;
 }
@@ -163,13 +171,13 @@ body > section h3 {
 }
 
 .topic .abstract {
-    font-size: 1.2em;
     margin: 1em 0;
 }
 
 .topic .abstract b,
 .topic .bio b {
-    color: #FF931E;
+    color: #000000;
+    display: block;
 }
 
 .topic .link span {
@@ -265,26 +273,30 @@ body > section h3 {
   font-weight: 300;
 }
 
-.topic-init, .topic-init .time,
-.topic-break, .topic-break .time,
-.topic-lunch, .topic-lunch .time {
+.topic.topic-init, .topic.topic-init .time, .topic.topic-init h2,
+.topic.topic-break, .topic.topic-break .time, .topic.topic-break h2,
+.topic.topic-lunch, .topic.topic-lunch .time, .topic.topic-lunch h2 {
   color: #fff;
 }
 
-.topic-init {
+.topic.topic-init {
   background: #FF931E;
 }
 
-.topic-break {
+.topic.topic-break {
   background: #7AC943;
 }
 
-.topic-lunch {
+.topic.topic-lunch {
   background: #3FA9F5;
 }
 
 #location {
   background: #8BC944;
+  color: #fff;
+}
+
+#location h2 {
   color: #fff;
 }
 
@@ -294,6 +306,10 @@ body > section h3 {
 
 #registration {
   background: #3FA9F5;
+  color: #fff;
+}
+
+#registration h2 {
   color: #fff;
 }
 
